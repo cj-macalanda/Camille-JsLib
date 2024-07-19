@@ -1,0 +1,152 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f2e8;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+header {
+    background: #6a886f;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-weight: 400;
+    color: #482b0c;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+    font-weight: 200;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    color: #bf8064;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2em;
+    font-family: "Playwrite HR", cursive;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+/* .hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #b0b084;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+} */
+
+.featured-products {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.featured-products h2 {
+    margin-bottom: 20px;
+    color: #39483c;
+}
+
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+    color: #39483c;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #b2a78e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+@media (min-width: 600px) {
+    .product-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* justify-content: space-around; */
+    }
+
+    .product-item {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    header nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 20px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+        color: #6a886f;
+    }
+
+    /* .hero button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    } */
+
+    .container {
+        width: 100%;
+    }
+}
